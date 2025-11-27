@@ -1,0 +1,324 @@
+:root {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #5A5A5A;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+a {
+  color: #05A8BE;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.divMainContainer {
+  display: flex;
+  flex: 1;
+  background-color: #fff;
+  padding: 10px 40px;
+  gap: 10px;
+}
+
+.divLeftContainer {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 73%;
+  flex: 1;
+  gap: 10px;
+}
+
+
+.divExploreKeySection {
+  display: flex;
+  flex-direction: column;
+}
+
+.divKeySectionHeader {
+  display: flex;
+  flex: 1;
+  background-color: #EAEAEA;
+  padding: 10px;
+  color: #5C5C5C;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.divKeySectionContent {
+  border: 1px solid #CECECE;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.divKeyContent {
+  display: flex;
+  flex-direction: column;
+  flex-basis: calc((100%/2) - 38px);
+  border: 1px solid #CECECE;
+  padding: 15px;
+  min-height: 110px;
+}
+
+.divContentHeader {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.divContentHeader img {
+  width: 30px;
+  opacity: 40%;
+}
+
+.divContentHeader a {
+  color: #05A8BE;
+  cursor: pointer;
+  flex-basis: 90%;
+}
+
+.divContentHeader a:hover {
+  text-decoration: underline;
+}
+
+.divRecentlySavedProducts .divImageList {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.divRecentlySavedProducts .divImageList div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-align: center;
+  align-items: center;
+  max-width: 120px;
+  font-size: 14px;
+}
+
+.imgDimensions {
+  width: 50px;
+}
+
+.imgNPS {
+  display: block;
+  width: 120px;
+  margin: auto;
+}
+
+.divRecentlySavedProducts .divImageList div a {
+  color: #05A8BE;
+  cursor: pointer;
+}
+
+.divBottomSection {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.divBasicSearch,
+.divDidYouKnow {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  border: 1px solid #CECECE;
+}
+
+.basicTextBox {
+  width: 97%;
+  height: 40px;
+  border: 1px solid #AFAFAF;
+  border-radius: 4px;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.divUserReview {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 65%;
+  padding: 15px;
+  border: 1px solid #CECECE;
+}
+
+.divSurveyResult {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #CECECE;
+  flex-basis: 35%;
+  padding: 15px;
+}
+
+.divRightContainer {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 27%;
+  gap: 0;
+}
+
+.divRightContainer .divRightContentHeader {
+  background-color: #EAEAEA;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.divRightContainer .divRightContent {
+  border: 1px solid #CECECE;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.divRightContent a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+}
+
+.divRightContent a img {
+  width: 24px;
+}
+
+.divRightContentBlock {
+  display: flex;
+  flex-direction: column;
+  min-height: 80px;
+}
+
+/* Hide default large arrows */
+.carousel .control-arrow {
+  background: none !important;
+  opacity: 1 !important;
+}
+
+/* Round arrow container */
+.carousel .control-prev.control-arrow,
+.carousel .control-next.control-arrow {
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50% !important;
+  background: rgba(0, 0, 0, 0.4) !important;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  top: 50% !important;
+  transform: translateY(-50%);
+}
+
+/* White arrow icon inside the circle */
+.carousel .control-prev.control-arrow:before,
+.carousel .control-next.control-arrow:before {
+  border: solid white !important;
+  border-width: 0 3px 3px 0 !important;
+  padding: 8px !important;
+  display: inline-block !important;
+}
+
+/* Arrow direction styling */
+
+/* Fix slide container layout */
+.carousel .slide {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 12px 20px !important;
+  text-align: center !important;
+  min-height: 80px;
+  /* adjust as needed */
+  box-sizing: border-box;
+  background: transparent !important;
+}
+
+/* Fix your text styling in slides */
+.divDidYouKnow .divContent {
+  max-width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.divUserReview .divContent {
+  max-width: 85%;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.carousel .control-prev.control-arrow:before {
+  transform: rotate(135deg);
+}
+
+.carousel .control-next.control-arrow:before {
+  transform: rotate(-45deg);
+}
+
+.carousel .control-prev.control-arrow,
+.carousel .control-next.control-arrow {
+  background-color: #fff !important;
+  border: 2px solid #D1D1D1;
+}
+
+.carousel .control-prev.control-arrow:before,
+.carousel .control-next.control-arrow:before {
+  border: solid #D1D1D1 !important;
+  border-width: 0 4px 4px 0 !important;
+  padding: 4px !important;
+  display: inline-block !important;
+}
+
+/* Hover effect */
+.carousel .control-prev.control-arrow:hover,
+.carousel .control-next.control-arrow:hover {
+  background: #D1D1D1 !important;
+  cursor: pointer;
+}
+
+.carousel .control-prev.control-arrow:hover:before,
+.carousel .control-next.control-arrow:hover:before {
+  border: solid #fff !important;
+  border-width: 0 4px 4px 0 !important;
+  padding: 4px !important;
+  display: inline-block !important;
+}
+
+/* Carousel container must be relative so dots can be positioned inside */
+.divDidYouKnow .carousel-root {
+  position: relative;
+}
+
+/* Put indicator dots at the absolute bottom of the carousel area */
+.divDidYouKnow .control-dots {
+  position: absolute !important;
+  left: 0;
+  right: 0;
+  margin: 0 auto !important;
+  padding: 0 !important;
+}
+
+/* Show dots */
+.carousel .control-dots {
+  bottom: 0 !important;
+  display: block !important;
+  margin: 0 !important;
+}
+
+.carousel .control-dots .dot {
+  background: #333 !important;
+}
